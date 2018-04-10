@@ -66,7 +66,7 @@ def neural_network_validation(model, data, prem, label):
     return score
 
 def gradientBoostingClassifier_model(data, label):
-    gbrt = GradientBoostingClassifier(random_state=0, n_estimators=25, max_depth=3)
+    gbrt = GradientBoostingClassifier(random_state=0, n_estimators=100, max_depth=5)
     gbrt.fit(data, label)
 
     return gbrt
